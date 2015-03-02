@@ -1,0 +1,13 @@
+Info sobre o MiniChallenge *1
+
+1- Qual é o objetivo do aplicativo?
+2- Quais funcionalidades ele deve conter?
+3- O que é mapkit?
+4- Como por os pinos de localização no mapa?
+5- Como adicionar uma row, já com a localização do pino?
+6- Como criar a rota até o pino solicitado?
+7- E necessario ter uma ligação com o Google Maps?
+8- Como utilizar a localização do aparelho?
+9- E necessario atualizar a posicao do aparelho de quanto em quanto tempo?
+10- Quais testes são necessarios para validar o aplicativo?(testes de mesa, classes de teste, teste pratico)
+11- Para a utilizacao do aplicativo, que tipo de rede é necessaria?
