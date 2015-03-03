@@ -1,0 +1,479 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3E7E700D1AA4AAC80024BD86 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E7E700C1AA4AAC80024BD86 /* main.m */; };
+		3E7E70101AA4AAC80024BD86 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E7E700F1AA4AAC80024BD86 /* AppDelegate.m */; };
+		3E7E70181AA4AAC80024BD86 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3E7E70171AA4AAC80024BD86 /* Images.xcassets */; };
+		3E7E701B1AA4AAC80024BD86 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3E7E70191AA4AAC80024BD86 /* LaunchScreen.xib */; };
+		3E7E70271AA4AAC80024BD86 /* poitableTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E7E70261AA4AAC80024BD86 /* poitableTests.m */; };
+		3E7E70351AA4AE410024BD86 /* GroupTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E7E70341AA4AE410024BD86 /* GroupTableViewController.m */; };
+		3E7E70381AA4AE600024BD86 /* GroupTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E7E70371AA4AE600024BD86 /* GroupTableViewCell.m */; };
+		3E7E703B1AA4AECB0024BD86 /* GroupPOI.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E7E703A1AA4AECB0024BD86 /* GroupPOI.m */; };
+		3E7E703E1AA4E3970024BD86 /* GroupViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E7E703D1AA4E3970024BD86 /* GroupViewController.m */; };
+		3E7E70441AA4EF430024BD86 /* POITableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E7E70431AA4EF430024BD86 /* POITableViewController.m */; };
+		3E7E70471AA4EF5A0024BD86 /* POITableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E7E70461AA4EF5A0024BD86 /* POITableViewCell.m */; };
+		3E7E704A1AA4EF6E0024BD86 /* POIViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E7E70491AA4EF6E0024BD86 /* POIViewController.m */; };
+		3E7E704D1AA4EF7D0024BD86 /* POI.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E7E704C1AA4EF7D0024BD86 /* POI.m */; };
+		3E7E70511AA4F17A0024BD86 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3E7E70501AA4F17A0024BD86 /* Main.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3E7E70211AA4AAC80024BD86 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3E7E6FFF1AA4AAC80024BD86 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3E7E70061AA4AAC80024BD86;
+			remoteInfo = poitable;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		3E7E70071AA4AAC80024BD86 /* poitable.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = poitable.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3E7E700B1AA4AAC80024BD86 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3E7E700C1AA4AAC80024BD86 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		3E7E700E1AA4AAC80024BD86 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		3E7E700F1AA4AAC80024BD86 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		3E7E70171AA4AAC80024BD86 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		3E7E701A1AA4AAC80024BD86 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		3E7E70201AA4AAC80024BD86 /* poitableTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = poitableTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3E7E70251AA4AAC80024BD86 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3E7E70261AA4AAC80024BD86 /* poitableTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = poitableTests.m; sourceTree = "<group>"; };
+		3E7E70331AA4AE410024BD86 /* GroupTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GroupTableViewController.h; sourceTree = "<group>"; };
+		3E7E70341AA4AE410024BD86 /* GroupTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GroupTableViewController.m; sourceTree = "<group>"; };
+		3E7E70361AA4AE600024BD86 /* GroupTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GroupTableViewCell.h; sourceTree = "<group>"; };
+		3E7E70371AA4AE600024BD86 /* GroupTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GroupTableViewCell.m; sourceTree = "<group>"; };
+		3E7E70391AA4AECB0024BD86 /* GroupPOI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GroupPOI.h; sourceTree = "<group>"; };
+		3E7E703A1AA4AECB0024BD86 /* GroupPOI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GroupPOI.m; sourceTree = "<group>"; };
+		3E7E703C1AA4E3970024BD86 /* GroupViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GroupViewController.h; sourceTree = "<group>"; };
+		3E7E703D1AA4E3970024BD86 /* GroupViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GroupViewController.m; sourceTree = "<group>"; };
+		3E7E70421AA4EF430024BD86 /* POITableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = POITableViewController.h; sourceTree = "<group>"; };
+		3E7E70431AA4EF430024BD86 /* POITableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = POITableViewController.m; sourceTree = "<group>"; };
+		3E7E70451AA4EF5A0024BD86 /* POITableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = POITableViewCell.h; sourceTree = "<group>"; };
+		3E7E70461AA4EF5A0024BD86 /* POITableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = POITableViewCell.m; sourceTree = "<group>"; };
+		3E7E70481AA4EF6E0024BD86 /* POIViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = POIViewController.h; sourceTree = "<group>"; };
+		3E7E70491AA4EF6E0024BD86 /* POIViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = POIViewController.m; sourceTree = "<group>"; };
+		3E7E704B1AA4EF7D0024BD86 /* POI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = POI.h; sourceTree = "<group>"; };
+		3E7E704C1AA4EF7D0024BD86 /* POI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = POI.m; sourceTree = "<group>"; };
+		3E7E70501AA4F17A0024BD86 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3E7E70041AA4AAC80024BD86 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3E7E701D1AA4AAC80024BD86 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3E7E6FFE1AA4AAC80024BD86 = {
+			isa = PBXGroup;
+			children = (
+				3E7E70091AA4AAC80024BD86 /* poitable */,
+				3E7E70231AA4AAC80024BD86 /* poitableTests */,
+				3E7E70081AA4AAC80024BD86 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		3E7E70081AA4AAC80024BD86 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3E7E70071AA4AAC80024BD86 /* poitable.app */,
+				3E7E70201AA4AAC80024BD86 /* poitableTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3E7E70091AA4AAC80024BD86 /* poitable */ = {
+			isa = PBXGroup;
+			children = (
+				3E7E70411AA4EF200024BD86 /* POIStuff */,
+				3E7E70401AA4E69B0024BD86 /* GroupStuff */,
+				3E7E70171AA4AAC80024BD86 /* Images.xcassets */,
+				3E7E70191AA4AAC80024BD86 /* LaunchScreen.xib */,
+				3E7E700A1AA4AAC80024BD86 /* Supporting Files */,
+				3E7E70501AA4F17A0024BD86 /* Main.storyboard */,
+			);
+			path = poitable;
+			sourceTree = "<group>";
+		};
+		3E7E700A1AA4AAC80024BD86 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				3E7E700E1AA4AAC80024BD86 /* AppDelegate.h */,
+				3E7E700F1AA4AAC80024BD86 /* AppDelegate.m */,
+				3E7E700B1AA4AAC80024BD86 /* Info.plist */,
+				3E7E700C1AA4AAC80024BD86 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		3E7E70231AA4AAC80024BD86 /* poitableTests */ = {
+			isa = PBXGroup;
+			children = (
+				3E7E70261AA4AAC80024BD86 /* poitableTests.m */,
+				3E7E70241AA4AAC80024BD86 /* Supporting Files */,
+			);
+			path = poitableTests;
+			sourceTree = "<group>";
+		};
+		3E7E70241AA4AAC80024BD86 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				3E7E70251AA4AAC80024BD86 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		3E7E70401AA4E69B0024BD86 /* GroupStuff */ = {
+			isa = PBXGroup;
+			children = (
+				3E7E70331AA4AE410024BD86 /* GroupTableViewController.h */,
+				3E7E70341AA4AE410024BD86 /* GroupTableViewController.m */,
+				3E7E70361AA4AE600024BD86 /* GroupTableViewCell.h */,
+				3E7E70371AA4AE600024BD86 /* GroupTableViewCell.m */,
+				3E7E703C1AA4E3970024BD86 /* GroupViewController.h */,
+				3E7E703D1AA4E3970024BD86 /* GroupViewController.m */,
+				3E7E70391AA4AECB0024BD86 /* GroupPOI.h */,
+				3E7E703A1AA4AECB0024BD86 /* GroupPOI.m */,
+			);
+			name = GroupStuff;
+			sourceTree = "<group>";
+		};
+		3E7E70411AA4EF200024BD86 /* POIStuff */ = {
+			isa = PBXGroup;
+			children = (
+				3E7E70421AA4EF430024BD86 /* POITableViewController.h */,
+				3E7E70431AA4EF430024BD86 /* POITableViewController.m */,
+				3E7E70451AA4EF5A0024BD86 /* POITableViewCell.h */,
+				3E7E70461AA4EF5A0024BD86 /* POITableViewCell.m */,
+				3E7E70481AA4EF6E0024BD86 /* POIViewController.h */,
+				3E7E70491AA4EF6E0024BD86 /* POIViewController.m */,
+				3E7E704B1AA4EF7D0024BD86 /* POI.h */,
+				3E7E704C1AA4EF7D0024BD86 /* POI.m */,
+			);
+			name = POIStuff;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3E7E70061AA4AAC80024BD86 /* poitable */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3E7E702A1AA4AAC80024BD86 /* Build configuration list for PBXNativeTarget "poitable" */;
+			buildPhases = (
+				3E7E70031AA4AAC80024BD86 /* Sources */,
+				3E7E70041AA4AAC80024BD86 /* Frameworks */,
+				3E7E70051AA4AAC80024BD86 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = poitable;
+			productName = poitable;
+			productReference = 3E7E70071AA4AAC80024BD86 /* poitable.app */;
+			productType = "com.apple.product-type.application";
+		};
+		3E7E701F1AA4AAC80024BD86 /* poitableTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3E7E702D1AA4AAC80024BD86 /* Build configuration list for PBXNativeTarget "poitableTests" */;
+			buildPhases = (
+				3E7E701C1AA4AAC80024BD86 /* Sources */,
+				3E7E701D1AA4AAC80024BD86 /* Frameworks */,
+				3E7E701E1AA4AAC80024BD86 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3E7E70221AA4AAC80024BD86 /* PBXTargetDependency */,
+			);
+			name = poitableTests;
+			productName = poitableTests;
+			productReference = 3E7E70201AA4AAC80024BD86 /* poitableTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3E7E6FFF1AA4AAC80024BD86 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = "Rafael Souza Belchior da Silva";
+				TargetAttributes = {
+					3E7E70061AA4AAC80024BD86 = {
+						CreatedOnToolsVersion = 6.1.1;
+					};
+					3E7E701F1AA4AAC80024BD86 = {
+						CreatedOnToolsVersion = 6.1.1;
+						TestTargetID = 3E7E70061AA4AAC80024BD86;
+					};
+				};
+			};
+			buildConfigurationList = 3E7E70021AA4AAC80024BD86 /* Build configuration list for PBXProject "poitable" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3E7E6FFE1AA4AAC80024BD86;
+			productRefGroup = 3E7E70081AA4AAC80024BD86 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3E7E70061AA4AAC80024BD86 /* poitable */,
+				3E7E701F1AA4AAC80024BD86 /* poitableTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3E7E70051AA4AAC80024BD86 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3E7E70511AA4F17A0024BD86 /* Main.storyboard in Resources */,
+				3E7E701B1AA4AAC80024BD86 /* LaunchScreen.xib in Resources */,
+				3E7E70181AA4AAC80024BD86 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3E7E701E1AA4AAC80024BD86 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3E7E70031AA4AAC80024BD86 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3E7E704D1AA4EF7D0024BD86 /* POI.m in Sources */,
+				3E7E70471AA4EF5A0024BD86 /* POITableViewCell.m in Sources */,
+				3E7E70441AA4EF430024BD86 /* POITableViewController.m in Sources */,
+				3E7E703E1AA4E3970024BD86 /* GroupViewController.m in Sources */,
+				3E7E70101AA4AAC80024BD86 /* AppDelegate.m in Sources */,
+				3E7E700D1AA4AAC80024BD86 /* main.m in Sources */,
+				3E7E70351AA4AE410024BD86 /* GroupTableViewController.m in Sources */,
+				3E7E704A1AA4EF6E0024BD86 /* POIViewController.m in Sources */,
+				3E7E703B1AA4AECB0024BD86 /* GroupPOI.m in Sources */,
+				3E7E70381AA4AE600024BD86 /* GroupTableViewCell.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3E7E701C1AA4AAC80024BD86 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3E7E70271AA4AAC80024BD86 /* poitableTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3E7E70221AA4AAC80024BD86 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3E7E70061AA4AAC80024BD86 /* poitable */;
+			targetProxy = 3E7E70211AA4AAC80024BD86 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		3E7E70191AA4AAC80024BD86 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3E7E701A1AA4AAC80024BD86 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3E7E70281AA4AAC80024BD86 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		3E7E70291AA4AAC80024BD86 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3E7E702B1AA4AAC80024BD86 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = poitable/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		3E7E702C1AA4AAC80024BD86 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = poitable/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		3E7E702E1AA4AAC80024BD86 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = poitableTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/poitable.app/poitable";
+			};
+			name = Debug;
+		};
+		3E7E702F1AA4AAC80024BD86 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = poitableTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/poitable.app/poitable";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3E7E70021AA4AAC80024BD86 /* Build configuration list for PBXProject "poitable" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3E7E70281AA4AAC80024BD86 /* Debug */,
+				3E7E70291AA4AAC80024BD86 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3E7E702A1AA4AAC80024BD86 /* Build configuration list for PBXNativeTarget "poitable" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3E7E702B1AA4AAC80024BD86 /* Debug */,
+				3E7E702C1AA4AAC80024BD86 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3E7E702D1AA4AAC80024BD86 /* Build configuration list for PBXNativeTarget "poitableTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3E7E702E1AA4AAC80024BD86 /* Debug */,
+				3E7E702F1AA4AAC80024BD86 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3E7E6FFF1AA4AAC80024BD86 /* Project object */;
+}
