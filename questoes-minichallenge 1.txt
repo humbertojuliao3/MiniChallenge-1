@@ -1,13 +1,28 @@
 Info sobre o MiniChallenge *1
 
-1- Qual È o objetivo do aplicativo?
-2- Quais funcionalidades ele deve conter?
-3- O que È mapkit?
-4- Como por os pinos de localizaÁ„o no mapa?
-5- Como adicionar uma row, j· com a localizaÁ„o do pino?
-6- Como criar a rota atÈ o pino solicitado?
-7- E necessario ter uma ligaÁ„o com o Google Maps?
-8- Como utilizar a localizaÁ„o do aparelho?
-9- E necessario atualizar a posicao do aparelho de quanto em quanto tempo?
-10- Quais testes s„o necessarios para validar o aplicativo?(testes de mesa, classes de teste, teste pratico)
-11- Para a utilizacao do aplicativo, que tipo de rede È necessaria?
+Qual È o objetivo do aplicativo?
+Quais funcionalidades ele deve conter?
+ O que é o mapkit?
+ Como por os pinos de localização no mapa?
+Como adicionar uma row, ja com a localizacao do pino?
+Como criar a rota até o pino solicitado?
+E necessário ter uma ligação com o Google Maps?
+Como utilizar a localizaçao do aparelho?
+E necesário atualizar a posição do aparelho de quanto em quanto tempo?
+ Quais testes são necessários para validar o aplicativo?(testes de mesa, classes de teste, teste pratico)
+  Para a utilização do aplicativo, que tipo de rede é necessária?
+ Como melhorar a vida do usuário?
+ Por que nosso app é diferente dos disponíveis no mercado? O que leva as pessoas a escolhe-lo?
+ Como implementar o mapa?
+ CoreLocation? MapKit? Geocoding?
+ “Google Maps” ou Apple’s “Maps”?
+ Como obter posição do usuário?
+ Como definir local de chegada?
+ Como usar Annotations para o local de chegada? MKAnnotation?
+ Como traçar rota?
+
+Área:Utilitario.
+
+Problema:Inexistência de um app com lista de pontos de interesse no mercado.
+
+Aplicativo: Um utilitário que utiliza mapas e sua posição geográfica para ligar pontos de interesse personalizados pelo usuário.
