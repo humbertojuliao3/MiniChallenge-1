@@ -10,4 +10,6 @@
 
 @interface POITableViewController : UITableViewController
 
+@property NSInteger contator;
+
 @end

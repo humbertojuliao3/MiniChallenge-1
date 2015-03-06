@@ -7,17 +7,21 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "POI.h"
+#import "GroupPOI.h"
+#import "PoiClass.h"
 
 @interface GroupPOI : NSObject
 {
     NSMutableArray *groupPOIName;
-    NSMutableArray *poiArray;
+    NSMutableDictionary *poiItens;
 }
-
+@property NSString *key;
 @property NSMutableArray *groupPOIName;
-@property NSMutableArray *poiArray;
+@property NSMutableArray *poiItensArray;
+@property NSMutableDictionary *poiItens;
+
 +(GroupPOI *) instance;
 -(id) initWithGroups;
 -(void) addGroupName:(NSString *)n;
+-(void)addPOIRowWithItem:(PoiClass *)valor atKey:(NSString *)chave;
 @end

@@ -19,8 +19,8 @@
 		3E7E70441AA4EF430024BD86 /* POITableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E7E70431AA4EF430024BD86 /* POITableViewController.m */; };
 		3E7E70471AA4EF5A0024BD86 /* POITableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E7E70461AA4EF5A0024BD86 /* POITableViewCell.m */; };
 		3E7E704A1AA4EF6E0024BD86 /* POIViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E7E70491AA4EF6E0024BD86 /* POIViewController.m */; };
-		3E7E704D1AA4EF7D0024BD86 /* POI.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E7E704C1AA4EF7D0024BD86 /* POI.m */; };
 		3E7E70511AA4F17A0024BD86 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3E7E70501AA4F17A0024BD86 /* Main.storyboard */; };
+		5CDB633C1AA78FDE00FC0835 /* PoiClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 5CDB633B1AA78FDE00FC0835 /* PoiClass.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,9 +58,9 @@
 		3E7E70461AA4EF5A0024BD86 /* POITableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = POITableViewCell.m; sourceTree = "<group>"; };
 		3E7E70481AA4EF6E0024BD86 /* POIViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = POIViewController.h; sourceTree = "<group>"; };
 		3E7E70491AA4EF6E0024BD86 /* POIViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = POIViewController.m; sourceTree = "<group>"; };
-		3E7E704B1AA4EF7D0024BD86 /* POI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = POI.h; sourceTree = "<group>"; };
-		3E7E704C1AA4EF7D0024BD86 /* POI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = POI.m; sourceTree = "<group>"; };
 		3E7E70501AA4F17A0024BD86 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		5CDB633A1AA78FDE00FC0835 /* PoiClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PoiClass.h; sourceTree = "<group>"; };
+		5CDB633B1AA78FDE00FC0835 /* PoiClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PoiClass.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -164,8 +164,8 @@
 				3E7E70461AA4EF5A0024BD86 /* POITableViewCell.m */,
 				3E7E70481AA4EF6E0024BD86 /* POIViewController.h */,
 				3E7E70491AA4EF6E0024BD86 /* POIViewController.m */,
-				3E7E704B1AA4EF7D0024BD86 /* POI.h */,
-				3E7E704C1AA4EF7D0024BD86 /* POI.m */,
+				5CDB633A1AA78FDE00FC0835 /* PoiClass.h */,
+				5CDB633B1AA78FDE00FC0835 /* PoiClass.m */,
 			);
 			name = POIStuff;
 			sourceTree = "<group>";
@@ -270,11 +270,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3E7E704D1AA4EF7D0024BD86 /* POI.m in Sources */,
 				3E7E70471AA4EF5A0024BD86 /* POITableViewCell.m in Sources */,
 				3E7E70441AA4EF430024BD86 /* POITableViewController.m in Sources */,
 				3E7E703E1AA4E3970024BD86 /* GroupViewController.m in Sources */,
 				3E7E70101AA4AAC80024BD86 /* AppDelegate.m in Sources */,
+				5CDB633C1AA78FDE00FC0835 /* PoiClass.m in Sources */,
 				3E7E700D1AA4AAC80024BD86 /* main.m in Sources */,
 				3E7E70351AA4AE410024BD86 /* GroupTableViewController.m in Sources */,
 				3E7E704A1AA4EF6E0024BD86 /* POIViewController.m in Sources */,

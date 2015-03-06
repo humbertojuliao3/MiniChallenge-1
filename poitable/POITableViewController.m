@@ -7,12 +7,14 @@
 //
 
 #import "POITableViewController.h"
-#import "POI.h"
 #import "POITableViewCell.h"
+#import "GroupPOI.h"
+#import "POIViewController.h"
 
 @interface POITableViewController ()
 {
-    POI *poiData;
+    GroupPOI *poiData;
+    
 }
 
 @end
@@ -21,7 +23,9 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    poiData=[POI instance];
+    poiData=[GroupPOI instance];
+    _contator=0;
+    
     
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
@@ -34,7 +38,14 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+-(void)viewDidAppear:(BOOL)animated{
+    if ([poiData.poiItens objectForKey:poiData.key]!=poiData.poiItensArray) {
+        [poiData.poiItens setObject:poiData.poiItensArray forKey:poiData.key];
+    }
+}
 -(void)viewWillAppear:(BOOL)animated{
+    _contator=0;
+    
     [self.tableView reloadData];
 }
 #pragma mark - Table view data source
@@ -48,7 +59,7 @@
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
 //#warning Incomplete method implementation.
     // Return the number of rows in the section.
-    return [poiData.poiName count];
+    return [[poiData.poiItens objectForKey:poiData.key] count];
 }
 
 
@@ -61,11 +72,12 @@
         cell = [[POITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"POICell"];
     }
     
-    NSString *poiNameString = [poiData.poiName objectAtIndex:[indexPath row]];
-    NSString *poiAddressString = [poiData.poiAddress objectAtIndex:[indexPath row]];
+    NSString *poiNameString = [[[poiData.poiItens objectForKey:poiData.key] objectAtIndex:_contator] nome];
+    NSString *poiAddressString = [[[poiData.poiItens  objectForKey:poiData.key] objectAtIndex: _contator] endereco];
     
     [[cell poiName] setText:poiNameString];
     [[cell poiAddress] setText:poiAddressString];
+    _contator++;
     
     return cell;
 }
@@ -78,14 +90,13 @@
     return YES;
 }
 
-
+//
 
 // Override to support editing the table view.
 - (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath {
     if (editingStyle == UITableViewCellEditingStyleDelete) {
         // Delete the row from the data source
-        [poiData.poiName removeObjectAtIndex:[indexPath row]];
-        [poiData.poiAddress removeObjectAtIndex:[indexPath row]];
+        [poiData.poiItens removeObjectForKey:poiData.key];
         [tableView deleteRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationFade];
     } else if (editingStyle == UITableViewCellEditingStyleInsert) {
         // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
@@ -106,15 +117,18 @@
     return YES;
 }
 
-
+//-(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender{
+//    if ([[segue identifier] isEqualToString:@"POIViewControler"]) {
+////        NSIndexPath *indexPath = [self.tableView indexPathForSelectedRow];
+//        POIViewController *table2=[segue destinationViewController];
+//        table2.preview = _poiTable;
+//    }
+//}
 
 #pragma mark - Navigation
 
 // In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
+
 
 
 @end

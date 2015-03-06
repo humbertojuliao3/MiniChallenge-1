@@ -9,6 +9,7 @@
 #import "GroupTableViewController.h"
 #import "GroupTableViewCell.h"
 #import "GroupPOI.h"
+#import "POITableViewController.h"
 
 @interface GroupTableViewController ()
 {
@@ -34,6 +35,10 @@
 }
 -(void)viewWillAppear:(BOOL)animated{
     [self.tableView reloadData];
+}
+-(void)viewWillDisappear:(BOOL)animated{
+    NSIndexPath *myIndexPath = [self.tableView indexPathForSelectedRow];
+    groupData.key=[groupData.groupPOIName objectAtIndex:[myIndexPath row]];
 }
 #pragma mark - Table view data source
 

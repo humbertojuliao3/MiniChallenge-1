@@ -82,7 +82,7 @@
                             <items>
                                 <barButtonItem systemItem="compose" id="YiV-Z0-dWX">
                                     <connections>
-                                        <segue destination="nLh-O8-neN" kind="presentation" id="AyH-dd-pjN"/>
+                                        <segue destination="nLh-O8-neN" kind="presentation" identifier="POIViewControler" id="AyH-dd-pjN"/>
                                     </connections>
                                 </barButtonItem>
                             </items>
@@ -271,7 +271,7 @@
                                         </barButtonItem>
                                         <barButtonItem key="rightBarButtonItem" title="Add" id="UiC-nY-lyE">
                                             <connections>
-                                                <action selector="add:" destination="nLh-O8-neN" id="TAi-k8-8ye"/>
+                                                <action selector="add:" destination="nLh-O8-neN" id="M02-xm-b5H"/>
                                             </connections>
                                         </barButtonItem>
                                     </navigationItem>
@@ -333,7 +333,7 @@
                     </items>
                 </toolbar>
             </objects>
-            <point key="canvasLocation" x="1018.5" y="951"/>
+            <point key="canvasLocation" x="1050" y="951"/>
         </scene>
     </scenes>
 </document>

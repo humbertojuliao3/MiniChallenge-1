@@ -7,11 +7,12 @@
 //
 
 #import "POIViewController.h"
-#import "POI.h"
-
+#import "POITableViewController.h"
+#import "GroupPOI.h"
+#import "PoiClass.h"
 @interface POIViewController ()
 {
-    POI *poiAdd;
+    GroupPOI *poiAdd;
 }
 @end
 
@@ -19,7 +20,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    poiAdd=[POI instance];
+    poiAdd=[GroupPOI instance];
     // Do any additional setup after loading the view.
 }
 
@@ -43,7 +44,10 @@
 }
 
 - (IBAction)add:(id)sender {
-    [poiAdd addPOIRowWithName:_poiName.text andAddress:_poiAddress.text];
+    PoiClass *classe=[[PoiClass alloc] initWithNome:_poiName.text andEndereco:_poiAddress.text];
+
+    
+    [poiAdd addPOIRowWithItem:classe atKey: poiAdd.key];
     [self dismissViewControllerAnimated:YES completion:nil];
 }
 @end
